@@ -14,10 +14,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var thumbnailView: PDFThumbnailView!
     @IBOutlet weak var mainPDFView: PDFView!
     
+    @IBOutlet weak var collectionView: UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupPDF()
         setupThumbnail()
+        
+        collectionView.register(UINib(nibName: "CollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "Cell")
     }
 
 }
@@ -27,7 +31,7 @@ extension ViewController {
     func setupPDF() {
         
         guard let path = Bundle.main.path(forResource: "pdf-sample1", ofType: "pdf") else {
-            print("failed to het path.")
+            print("failed to get path.")
             return
         }
         let pdfURL = URL(fileURLWithPath: path)
@@ -45,11 +49,25 @@ extension ViewController {
     }
     
     func setupThumbnail() {
-        
         thumbnailView.pdfView = mainPDFView
         thumbnailView.layoutMode = .horizontal
         thumbnailView.backgroundColor = .gray
-        thumbnailView.thumbnailSize = CGSize(width: 100, height: 200)
+        thumbnailView.thumbnailSize = CGSize(width: 30, height: 40)
+    }
+    
+}
+
+extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt
+        indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath)
+        
+        return cell
     }
     
 }
