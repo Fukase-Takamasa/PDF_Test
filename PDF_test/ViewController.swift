@@ -11,8 +11,7 @@ import PDFKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var thumbnailView1: PDFThumbnailView!
-    @IBOutlet weak var thumbnailView2: PDFThumbnailView!
+    @IBOutlet weak var thumbnailView: PDFThumbnailView!
     @IBOutlet weak var mainPDFView: PDFView!
     
     override func viewDidLoad() {
@@ -20,11 +19,6 @@ class ViewController: UIViewController {
         setupPDF()
         setupThumbnail()
     }
-    
-    
-    
-    
-
 
 }
 
@@ -52,10 +46,10 @@ extension ViewController {
     
     func setupThumbnail() {
         
-        thumbnailView1.pdfView = mainPDFView
-        thumbnailView1.layoutMode = .horizontal
-        thumbnailView1.backgroundColor = .gray
-        thumbnailView1.thumbnailSize = CGSize(width: 100, height: 200)
+        thumbnailView.pdfView = mainPDFView
+        thumbnailView.layoutMode = .horizontal
+        thumbnailView.backgroundColor = .gray
+        thumbnailView.thumbnailSize = CGSize(width: 100, height: 200)
     }
     
 }

@@ -17,6 +17,8 @@
 		596F4A9523FD1D260034C047 /* PDF_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596F4A9423FD1D260034C047 /* PDF_testTests.swift */; };
 		596F4AA023FD1D260034C047 /* PDF_testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596F4A9F23FD1D260034C047 /* PDF_testUITests.swift */; };
 		596F4AB323FD26110034C047 /* PDFKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 596F4AB223FD26110034C047 /* PDFKit.framework */; };
+		6765F16C23FD7FEC00D3FA81 /* pdf-sample3.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 6765F16A23FD7FEC00D3FA81 /* pdf-sample3.pdf */; };
+		6765F16D23FD7FEC00D3FA81 /* pdf-sample2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 6765F16B23FD7FEC00D3FA81 /* pdf-sample2.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		596F4A9F23FD1D260034C047 /* PDF_testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDF_testUITests.swift; sourceTree = "<group>"; };
 		596F4AA123FD1D260034C047 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		596F4AB223FD26110034C047 /* PDFKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PDFKit.framework; path = System/Library/Frameworks/PDFKit.framework; sourceTree = SDKROOT; };
+		6765F16A23FD7FEC00D3FA81 /* pdf-sample3.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "pdf-sample3.pdf"; sourceTree = "<group>"; };
+		6765F16B23FD7FEC00D3FA81 /* pdf-sample2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "pdf-sample2.pdf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +112,8 @@
 				596F4A7D23FD1D220034C047 /* AppDelegate.swift */,
 				596F4A7F23FD1D220034C047 /* SceneDelegate.swift */,
 				5904822923FD515A003B83C7 /* pdf-sample1.pdf */,
+				6765F16B23FD7FEC00D3FA81 /* pdf-sample2.pdf */,
+				6765F16A23FD7FEC00D3FA81 /* pdf-sample3.pdf */,
 				596F4A8123FD1D220034C047 /* ViewController.swift */,
 				596F4A8323FD1D230034C047 /* Main.storyboard */,
 				596F4A8623FD1D260034C047 /* Assets.xcassets */,
@@ -249,7 +255,9 @@
 			files = (
 				596F4A8A23FD1D260034C047 /* LaunchScreen.storyboard in Resources */,
 				596F4A8723FD1D260034C047 /* Assets.xcassets in Resources */,
+				6765F16D23FD7FEC00D3FA81 /* pdf-sample2.pdf in Resources */,
 				596F4A8523FD1D230034C047 /* Main.storyboard in Resources */,
+				6765F16C23FD7FEC00D3FA81 /* pdf-sample3.pdf in Resources */,
 				5904822A23FD515A003B83C7 /* pdf-sample1.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
