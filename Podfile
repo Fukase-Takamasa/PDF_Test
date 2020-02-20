@@ -7,6 +7,7 @@ target 'PDF_test' do
   pod 'SPStorkController'
   pod 'Instantiate'
   pod 'InstantiateStandard'
+  pod 'PanModal'
 
 
   # Pods for PDF_test

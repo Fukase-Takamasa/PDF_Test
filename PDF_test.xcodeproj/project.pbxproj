@@ -3,11 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		5904822A23FD515A003B83C7 /* pdf-sample1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 5904822923FD515A003B83C7 /* pdf-sample1.pdf */; };
+		595A307E23FE603A000D8EE9 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595A307D23FE603A000D8EE9 /* BaseViewController.swift */; };
+		595A308023FE6D76000D8EE9 /* BaseViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 595A307F23FE6D76000D8EE9 /* BaseViewController.storyboard */; };
 		596F4A7E23FD1D220034C047 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596F4A7D23FD1D220034C047 /* AppDelegate.swift */; };
 		596F4A8023FD1D220034C047 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596F4A7F23FD1D220034C047 /* SceneDelegate.swift */; };
 		596F4A8223FD1D220034C047 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596F4A8123FD1D220034C047 /* ViewController.swift */; };
@@ -48,6 +50,8 @@
 		21A485B9EF70AC494BB88B76 /* Pods-PDF_testTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PDF_testTests.release.xcconfig"; path = "Target Support Files/Pods-PDF_testTests/Pods-PDF_testTests.release.xcconfig"; sourceTree = "<group>"; };
 		55019AD7515C314758C51D59 /* Pods_PDF_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PDF_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5904822923FD515A003B83C7 /* pdf-sample1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "pdf-sample1.pdf"; sourceTree = "<group>"; };
+		595A307D23FE603A000D8EE9 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		595A307F23FE6D76000D8EE9 /* BaseViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BaseViewController.storyboard; sourceTree = "<group>"; };
 		596F4A7A23FD1D220034C047 /* PDF_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PDF_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		596F4A7D23FD1D220034C047 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		596F4A7F23FD1D220034C047 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -114,7 +118,6 @@
 				CCCA5E58512700077BE51F2F /* Pods-PDF_testTests.debug.xcconfig */,
 				21A485B9EF70AC494BB88B76 /* Pods-PDF_testTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -152,6 +155,8 @@
 				596F4A8323FD1D230034C047 /* Main.storyboard */,
 				6765F16E23FD80C300D3FA81 /* CollectionViewCell.swift */,
 				6765F16F23FD80C300D3FA81 /* CollectionViewCell.xib */,
+				595A307D23FE603A000D8EE9 /* BaseViewController.swift */,
+				595A307F23FE6D76000D8EE9 /* BaseViewController.storyboard */,
 				596F4A8623FD1D260034C047 /* Assets.xcassets */,
 				596F4A8823FD1D260034C047 /* LaunchScreen.storyboard */,
 				596F4A8B23FD1D260034C047 /* Info.plist */,
@@ -303,6 +308,7 @@
 				6765F16D23FD7FEC00D3FA81 /* pdf-sample2.pdf in Resources */,
 				596F4A8523FD1D230034C047 /* Main.storyboard in Resources */,
 				6765F16C23FD7FEC00D3FA81 /* pdf-sample3.pdf in Resources */,
+				595A308023FE6D76000D8EE9 /* BaseViewController.storyboard in Resources */,
 				5904822A23FD515A003B83C7 /* pdf-sample1.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,6 +437,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				595A307E23FE603A000D8EE9 /* BaseViewController.swift in Sources */,
 				596F4A8223FD1D220034C047 /* ViewController.swift in Sources */,
 				596F4A7E23FD1D220034C047 /* AppDelegate.swift in Sources */,
 				6765F17023FD80C300D3FA81 /* CollectionViewCell.swift in Sources */,

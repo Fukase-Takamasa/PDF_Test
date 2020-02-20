@@ -2,24 +2,28 @@ PODS:
   - Instantiate (4.0.0)
   - InstantiateStandard (4.0.0):
     - Instantiate (~> 4.0)
+  - PanModal (1.2.5)
   - SPStorkController (1.7.9)
 
 DEPENDENCIES:
   - Instantiate
   - InstantiateStandard
+  - PanModal
   - SPStorkController
 
 SPEC REPOS:
   trunk:
     - Instantiate
     - InstantiateStandard
+    - PanModal
     - SPStorkController
 
 SPEC CHECKSUMS:
   Instantiate: 62516e7dde448721c1f5815a9ee7e0669d034d52
   InstantiateStandard: 18ab1417ba787113350c71a5b2251f0b4448be67
+  PanModal: 7c5af3ad4fe22b91508040965bebffb89fb607ae
   SPStorkController: 36bd84206267232747b19d48852659bd71ede28f
 
-PODFILE CHECKSUM: 5ef6c22ee0a0edbb05ed86ec0b92fc49d84d3307
+PODFILE CHECKSUM: 7a5c2f6dd981d1b788b0315f42e990da7048c455
 
 COCOAPODS: 1.8.3

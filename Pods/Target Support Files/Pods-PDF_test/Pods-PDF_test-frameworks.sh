@@ -163,11 +163,13 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Instantiate/Instantiate.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/InstantiateStandard/InstantiateStandard.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/PanModal/PanModal.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SPStorkController/SPStorkController.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Instantiate/Instantiate.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/InstantiateStandard/InstantiateStandard.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/PanModal/PanModal.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SPStorkController/SPStorkController.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then

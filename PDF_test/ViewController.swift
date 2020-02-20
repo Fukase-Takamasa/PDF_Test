@@ -7,7 +7,10 @@
 //
 
 import UIKit
+import Instantiate
+import InstantiateStandard
 import PDFKit
+import SPStorkController
 
 class ViewController: UIViewController {
     
@@ -87,6 +90,11 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath)
         
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let vc = BaseViewController.instantiate()
+        self.presentAsStork(vc, height: 180, showIndicator: true, showCloseButton: false, complection: nil)
     }
     
 }
