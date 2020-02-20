@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-PDF_test/Pods-PDF_test-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Instantiate/Instantiate.framework
+${BUILT_PRODUCTS_DIR}/InstantiateStandard/InstantiateStandard.framework
+${BUILT_PRODUCTS_DIR}/SPStorkController/SPStorkController.framework
