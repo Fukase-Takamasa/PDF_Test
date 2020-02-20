@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,32 +16,46 @@
                 <rect key="frame" x="0.0" y="0.0" width="297" height="288"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1f1-hm-6Nu" customClass="PDFView">
-                        <rect key="frame" x="7.5" y="20" width="282" height="248"/>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7RH-6s-Fyh" userLabel="BaseView">
+                        <rect key="frame" x="2" y="2" width="293" height="284"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1f1-hm-6Nu" customClass="PDFView">
+                                <rect key="frame" x="2" y="2" width="289" height="280"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="width" secondItem="1f1-hm-6Nu" secondAttribute="height" multiplier="141:124" id="BUz-S8-rhx"/>
+                            <constraint firstItem="1f1-hm-6Nu" firstAttribute="leading" secondItem="7RH-6s-Fyh" secondAttribute="leading" constant="2" id="Qpl-j1-7mc"/>
+                            <constraint firstAttribute="trailing" secondItem="1f1-hm-6Nu" secondAttribute="trailing" constant="2" id="iPl-rW-Ivn"/>
+                            <constraint firstAttribute="bottom" secondItem="1f1-hm-6Nu" secondAttribute="bottom" constant="2" id="sD9-rs-T0d"/>
+                            <constraint firstItem="1f1-hm-6Nu" firstAttribute="top" secondItem="7RH-6s-Fyh" secondAttribute="top" constant="2" id="wpU-gt-cW3"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                <integer key="value" value="10"/>
+                                <integer key="value" value="5"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
                 </subviews>
             </view>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="1f1-hm-6Nu" secondAttribute="bottom" constant="20" id="BAF-ce-Bdz"/>
-                <constraint firstItem="1f1-hm-6Nu" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="20" id="Tjt-7F-Wdl"/>
-                <constraint firstAttribute="trailing" secondItem="1f1-hm-6Nu" secondAttribute="trailing" constant="7.5" id="ktW-nS-Rw4"/>
-                <constraint firstItem="1f1-hm-6Nu" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="7.5" id="v0V-nS-EGa"/>
+                <constraint firstItem="7RH-6s-Fyh" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="2" id="2cB-Gs-rpa"/>
+                <constraint firstItem="7RH-6s-Fyh" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="2" id="aRR-Eu-YeG"/>
+                <constraint firstAttribute="trailing" secondItem="7RH-6s-Fyh" secondAttribute="trailing" constant="2" id="gFD-Pm-6za"/>
+                <constraint firstAttribute="bottom" secondItem="7RH-6s-Fyh" secondAttribute="bottom" constant="2" id="nX5-n5-a87"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="297" height="288"/>
             <connections>
                 <outlet property="cellPdfView" destination="1f1-hm-6Nu" id="uEU-66-DRm"/>
             </connections>
-            <point key="canvasLocation" x="241" y="160"/>
+            <point key="canvasLocation" x="239.85507246376812" y="159.375"/>
         </collectionViewCell>
     </objects>
 </document>
