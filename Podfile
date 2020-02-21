@@ -8,6 +8,10 @@ target 'PDF_test' do
   pod 'Instantiate'
   pod 'InstantiateStandard'
   pod 'PanModal'
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'FloatingPanel'
+  pod 'Parchment'
 
 
   # Pods for PDF_test

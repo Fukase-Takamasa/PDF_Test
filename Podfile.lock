@@ -1,29 +1,51 @@
 PODS:
+  - FloatingPanel (1.7.2)
   - Instantiate (4.0.0)
   - InstantiateStandard (4.0.0):
     - Instantiate (~> 4.0)
   - PanModal (1.2.5)
+  - Parchment (2.0.1)
+  - RxCocoa (5.0.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.0.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.0.1)
   - SPStorkController (1.7.9)
 
 DEPENDENCIES:
+  - FloatingPanel
   - Instantiate
   - InstantiateStandard
   - PanModal
+  - Parchment
+  - RxCocoa
+  - RxSwift
   - SPStorkController
 
 SPEC REPOS:
   trunk:
+    - FloatingPanel
     - Instantiate
     - InstantiateStandard
     - PanModal
+    - Parchment
+    - RxCocoa
+    - RxRelay
+    - RxSwift
     - SPStorkController
 
 SPEC CHECKSUMS:
+  FloatingPanel: b275a35d0a09be4bd37025e710a6a1d063bfc161
   Instantiate: 62516e7dde448721c1f5815a9ee7e0669d034d52
   InstantiateStandard: 18ab1417ba787113350c71a5b2251f0b4448be67
   PanModal: 7c5af3ad4fe22b91508040965bebffb89fb607ae
+  Parchment: 00cb7d0d0a38f5a4a7e089ec59637b970a58c0f0
+  RxCocoa: e741b9749968e8a143e2b787f1dfbff2b63d0a5c
+  RxRelay: 89d54507f4fd4d969e6ec1d4bd7f3673640b4640
+  RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
   SPStorkController: 36bd84206267232747b19d48852659bd71ede28f
 
-PODFILE CHECKSUM: 7a5c2f6dd981d1b788b0315f42e990da7048c455
+PODFILE CHECKSUM: 633114c3618b068263de2e3f74072b46327cabf7
 
-COCOAPODS: 1.8.3
+COCOAPODS: 1.8.4

@@ -1,9 +1,9 @@
 ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Instantiate" "${PODS_CONFIGURATION_BUILD_DIR}/InstantiateStandard" "${PODS_CONFIGURATION_BUILD_DIR}/PanModal" "${PODS_CONFIGURATION_BUILD_DIR}/SPStorkController"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/FloatingPanel" "${PODS_CONFIGURATION_BUILD_DIR}/Instantiate" "${PODS_CONFIGURATION_BUILD_DIR}/InstantiateStandard" "${PODS_CONFIGURATION_BUILD_DIR}/PanModal" "${PODS_CONFIGURATION_BUILD_DIR}/Parchment" "${PODS_CONFIGURATION_BUILD_DIR}/RxCocoa" "${PODS_CONFIGURATION_BUILD_DIR}/RxRelay" "${PODS_CONFIGURATION_BUILD_DIR}/RxSwift" "${PODS_CONFIGURATION_BUILD_DIR}/SPStorkController"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Instantiate/Instantiate.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/InstantiateStandard/InstantiateStandard.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/PanModal/PanModal.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/SPStorkController/SPStorkController.framework/Headers"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/FloatingPanel/FloatingPanel.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/Instantiate/Instantiate.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/InstantiateStandard/InstantiateStandard.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/PanModal/PanModal.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/Parchment/Parchment.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/RxCocoa/RxCocoa.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/RxRelay/RxRelay.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/RxSwift/RxSwift.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/SPStorkController/SPStorkController.framework/Headers"
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_LDFLAGS = $(inherited) -framework "Instantiate" -framework "InstantiateStandard" -framework "PanModal" -framework "SPStorkController" -framework "UIKit"
+OTHER_LDFLAGS = $(inherited) -framework "FloatingPanel" -framework "Instantiate" -framework "InstantiateStandard" -framework "PanModal" -framework "Parchment" -framework "RxCocoa" -framework "RxRelay" -framework "RxSwift" -framework "SPStorkController" -framework "UIKit"
 OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
